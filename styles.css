@@ -1,0 +1,131 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f4ef;
+    color: #4a4a4a;
+}
+
+header .header-img {
+    width: 100%;
+    height: 50%;
+max-width: 2000px;
+max-height: 200px;
+
+    object-fit: cover;
+}
+
+.save-the-date {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff0f5;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.save-the-date h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #a0522d;
+}
+
+.save-the-date h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: #8b0000;
+}
+
+.save-the-date p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.save-the-date .date-location {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #8b0000;
+}
+
+.photos {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: pink;
+}
+
+.photos h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #8b0000;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    max-width: 30%;
+    height: auto;
+    border: 3px solid #e5e5e5;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.map, .iban {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff0f5;
+    border-top: 2px solid #e5e5e5;
+}
+
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d0000;
+}
+
+.iban input {
+    width: calc(100% - 130px);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.iban button {
+    width: 100px;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #f7f4ef;
+    padding: 2rem 1rem;
+    border-top: 2px solid #e5e5e5;
+}
+
+footer p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #8b0000;
+}

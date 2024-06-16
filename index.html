@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio di [LL YY]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/Timage.jpg" alt="Foto degli Sposi" class="header-img">
+    </header>
+
+    <section class="save-the-date">
+        <h2>Save the Date</h2>
+        <h1>Celebrate love with us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <p class="date-location">3 SETTEMBRE 2028 - 3 FARINE</p>
+    </section>
+
+    <section class="photos">
+        <h2>Foto degli Sposi</h2>
+        <div class="photo-gallery">
+            <img src="images/Timage.jpg" alt="Foto degli Sposi 1">
+            <img src="images/Timage.jpg" alt="Foto degli Sposi 2">
+            <img src="images/Timage.jpg" alt="Foto della Location">
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>Come Arrivare</h2>
+        <button onclick="showLocation()">Vedi la posizione del ristorante</button>
+    </section>
+
+    <section class="iban">
+<p> please, help us with holiday</p>
+        <h2>Dettagli IBAN</h2>
+        <label for="iban">IBAN:</label>
+        <input type="text" id="iban" value="IT60X0542811101000000123456" readonly>
+        <button onclick="copyIBAN()">Copia IBAN</button>
+    </section>
+
+    <footer>
+        <p>Please, take a moment and respond to our invitation.</p><p>
+        <button onclick="rsvpYes()">SI</button>
+ O  <button onclick="rsvpNo()">NO</button> </p>
+       
+
+    </footer>
+
+    <script>
+        function showLocation() {
+            window.open("https://maps.google.it/maps?hl=it&gl=it&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x133a55ad429321c7:0x3f7ffc2b27591f87");
+        }
+
+        function copyIBAN() {
+            var ibanText = document.getElementById("iban");
+            ibanText.select();
+            ibanText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("IBAN copiato: " + ibanText.value);
+        }
+
+        function rsvpYes() {
+            window.location.href ="https://wa.me/39388621778752? text=ci%20saro";
+        }
+ function rsvpNo() {
+            window.location.href ="https://wa.me/39388626618752? text=mi%20dispiace%20non%20potro'%20esserci";
+        }
+
+    </script>
+</body>
+</html>
