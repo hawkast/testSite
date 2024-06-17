@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS-only letter-like form with inline fields</title>
+  <title>Inviaci la tua partecipazione!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="wrapper">
   <h1>Inviaci la tua partecipazione!</h1>
-  
-  <form class="form__contact" action="">
-    <fieldset>
-      <p>Hey!</p>
-      <p>My name is <span class="form__field field--name" data-placeholder="your name" tabindex="1" contenteditable></span> and my surname <span class="form__field field--message" data-placeholder="your surname" tabindex="2" contenteditable></span>.</p>
-      <p>we us <span class="form__field field--email" data-placeholder="number of member" tabindex="3" contenteditable></span>.</p>
-      <p>Hope to get in touch soon. Cheers!</p>
-      <button type="submit" class="button button--xlarge" tabindex="4">Send message &#187;</button>
-    </fieldset>
-  </form>
+  <form class="form__contact" action="
+https://docs.google.com/forms/d/e/1FAIpQLSdx7EeXeIxx6q3uUW9nHYsuPWJR9ZJR2pfLJ3Zg-TSunekNTA/formResponse" method="POST">
+  <fieldset>
+    <p>Hey!</p>
+    <p>My name is <input type="text" name="entry.90530735" class="form__field" placeholder="your name" required> and my surname <input type="text" name="entry.1089253758" class="form__field" placeholder="your surname" required>.</p>
+    <p>We are <input type="number" name="entry.1299526911" class="form__field" placeholder="number of members" required>.</p>
+    <p>Hope to get in touch soon. Cheers!</p>
+    <button type="submit" class="button button--xlarge">Send message &#187;</button>
+  </fieldset>
+</form>
 </div>
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
@@ -29,21 +27,18 @@
       <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
     </filter>
     <filter id="blur1">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0 5" />
+      <feGaussianBlur in "SourceGraphic" stdDeviation="0 5" />
     </filter>
     <filter id="blur2">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0 10" />
+      <feGaussianBlur in "SourceGraphic" stdDeviation="0 10" />
     </filter>
     <filter id="blur3">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0 15" />
+      <feGaussianBlur in "SourceGraphic" stdDeviation="0 15" />
     </filter>
     <filter id="blur4">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0 20" />
+      <feGaussianBlur in "SourceGraphic" stdDeviation="0 20" />
     </filter>
   </defs>
 </svg>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>

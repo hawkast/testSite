@@ -83,15 +83,12 @@ h1 {
 
 .form__field {
   display: inline;
-  color: #7DB665;
+  color: #7DB665; /* Colore del testo quando il campo è attivo e contiene testo */
   outline: none;
 }
-.form__field:empty {
-  display: inline-block;
-  color: #DDD;
-}
-.form__field:empty:before, .form__field:empty:focus:before {
-  content: attr(data-placeholder);
+
+.form__field::placeholder {
+  color: #DDD; /* Colore del placeholder */
 }
 
 svg {
