@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location del Ristorante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/risto4.jpg" alt="Foto del Ristorante" class="header-img">
+    </header>
+
+    <section class="location-details2">
+<p> <button onclick="goBack()">Torna Indietro</button> </p>
+        <h2>3 FARINE</h2>
+        <p><button onclick="showLocation()">Scopri come arrivarci</button>
+  </p>
+<hr></hr>
+        <div class="photo-gallery">
+            <img src="images/risto1.jpg" alt="Foto del Ristorante 1">
+            <img src="images/risto2.jpg" alt="Foto del Ristorante 2">
+            <img src="images/risto3.jpg" alt="Foto del Ristorante 3">
+        </div>    </section>
+
+    <script>
+        function showLocation() {
+            window.open("https://maps.google.it/maps?hl=it&gl=it&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x133a55ad429321c7:0x3f7ffc2b27591f87");
+        }
+    </script>
+</body>
+</html>

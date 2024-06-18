@@ -6,6 +6,7 @@
     <title>Matrimonio di [LL YY]</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,48 +29,24 @@
         </div>
     </section>
 
-    <section class="map">
-        <h2>Come Arrivare</h2>
-        <button onclick="showLocation()">Vedi la posizione del ristorante</button>
-    </section>
-
-    <section class="iban">
-<p> please, help us with holiday</p>
-        <h2>Dettagli IBAN</h2>
-        <label for="iban">IBAN:</label>
-        <input type="text" id="iban" value="IT60X0542811101000000123456" readonly>
-        <button onclick="copyIBAN()">Copia IBAN</button>
+    <section class="info-buttons">
+        <div class="button-container">
+            <div class="location-button">
+                <h2>Posizione</h2>
+                <button onclick="openPage('location.html')">Vedi la posizione del ristorante</button>
+            </div>
+            <div class="iban-button">
+                <h2>IBAN</h2>
+                <button onclick="openPage('iban.html')">Donation</button>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Please, take a moment and respond to our invitation.</p><p>
-        <button onclick="rsvpYes()">SI</button>
- O  <button onclick="rsvpNo()">NO</button> </p>
-       
-
+        <p>Please, take a moment and respond to our invitation.</p>
+        <button id="rsvp-yes" onclick="rsvpYes()">SI</button>
+<button id="rsvp-no" onclick="rsvpNo()">NO</button>
     </footer>
 
-    <script>
-        function showLocation() {
-            window.open("https://maps.google.it/maps?hl=it&gl=it&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x133a55ad429321c7:0x3f7ffc2b27591f87");
-        }
-
-        function copyIBAN() {
-            var ibanText = document.getElementById("iban");
-            ibanText.select();
-            ibanText.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            alert("IBAN copiato: " + ibanText.value);
-        }
-
-          function rsvpYes() {
-    window.open("form/form.html", "_blank");
-}
-
- function rsvpNo() {
-            window.location.href ="https://wa.me/39388626618752? text=mi%20dispiace%20non%20potro'%20esserci";
-        }
-
-    </script>
 </body>
 </html>

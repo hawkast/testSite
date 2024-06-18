@@ -8,34 +8,49 @@ body {
 
 header .header-img {
     width: 100%;
-    height: 50%;
-max-width: 2000px;
-max-height: 200px;
-
+    max-width: 2000px;
+    max-height: 300px;
     object-fit: cover;
 }
+.save-the-date{
+ text-align: center;
 
-.save-the-date {
-    text-align: center;
     padding: 2rem 1rem;
     background-color: #fff0f5;
     border-bottom: 2px solid #e5e5e5;
 }
 
-.save-the-date h2 {
+ .map, .iban, .location-details, .iban-details {
+    text-align: center;
+
+    padding: 2rem 1rem;
+    background-color: #fff0f5;
+    border-bottom: 2px solid #e5e5e5;
+ display: -webkit-inline-box;
+}
+.save-the-date, .map2, .iban2, .location-details2, .iban-details2 {
+    text-align: center;
+
+    padding: 2rem 1rem;
+    background-color: #fff0f5;
+    border-bottom: 2px solid #e5e5e5;
+
+}
+
+.save-the-date h2, .photos h2, .location-details h2, .iban-details h2, .iban-details2 h2, .location-details2 h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
     color: #a0522d;
 }
 
-.save-the-date h1 {
+.save-the-date h1, .location-details h2, .iban-details h2,.iban-details2 h2, .location-details2 h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     margin: 0.5rem 0;
     color: #8b0000;
 }
 
-.save-the-date p {
+.save-the-date p, .location-details p, .iban-details p,.iban-details2 p, .location-details2 p{
     font-size: 1rem;
     margin: 0.5rem 0;
     line-height: 1.5;
@@ -51,7 +66,7 @@ max-height: 200px;
 .photos {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #pink;
+    background-color: #ffe4e1;
 }
 
 .photos h2 {
@@ -80,17 +95,10 @@ max-height: 200px;
     transform: scale(1.05);
 }
 
-.map, .iban {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #fff0f5;
-    border-top: 2px solid #e5e5e5;
-}
-
 button {
     background-color: #8b0000;
     color: white;
-    border: none;
+    border-radius:100px;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
     font-size: 1rem;
@@ -102,6 +110,27 @@ button:hover {
     background-color: #5d0000;
 }
 
+footer {
+    text-align: center;
+    background-color: #f7f4ef;
+    padding: 2rem 1rem;
+    border-top: 2px solid #e5e5e5;
+}
+
+footer label {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #8b0000;
+}
+
+footer .rsvp {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .iban input {
     width: calc(100% - 130px);
     padding: 0.5rem;
@@ -111,21 +140,36 @@ button:hover {
     border-radius: 5px;
 }
 
-.iban button {
+.iban button, .iban-details button {
     width: 100px;
     padding: 0.5rem;
+position: relative;
+  left: 449px;
 }
 
-footer {
-    text-align: center;
-    background-color: #f7f4ef;
-    padding: 2rem 1rem;
-    border-top: 2px solid #e5e5e5;
+.info-buttons .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-footer p {
+.location-button h2, .iban-button h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin: 0.5rem 0;
     color: #8b0000;
+}
+	
+.particle {
+    position: absolute;
+    pointer-events: none;
+}
+
+.particle--fire {
+    background: hsl(60, 100%, 50%);
+    border-radius: 50%;
+}
+
+.particle--debris {
+    background: #8b0000;
 }

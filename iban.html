@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettagli IBAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/spiaggia1.jpg" alt="Foto Luna di Miele" class="header-img">
+    </header>
+
+    <section class="iban-details2">
+<p> <button onclick="goBack()">Torna Indietro</button> </p>
+        <h2>Dettagli IBAN</h2>
+        <p>Per favore, aiutaci con la nostra luna di miele</p>
+<hr></hr>
+        <label for="iban">IBAN:</label>
+        <input type="text" id="iban" value="IT60X0542811101000000123456" readonly>
+        <button onclick="copyIBAN()">Copia IBAN</button>
+<hr></hr>
+        <div class="photo-gallery">
+            <img src="images/spiaggia1.jpg" alt="Foto Luna di Miele 1">
+            <img src="images/spiaggia2.jpg" alt="Foto Luna di Miele 2">
+            <img src="images/spiaggia3.jpg" alt="Foto Luna di Miele 3">
+        </div>
+    </section>
+
+    <script>
+        function copyIBAN() {
+            var ibanText = document.getElementById("iban");
+            ibanText.select();
+            ibanText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("IBAN copiato: " + ibanText.value);
+        }
+    </script>
+</body>
+</html>
