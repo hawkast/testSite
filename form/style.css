@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+
 ::-moz-selection {
   color: #fff;
   background: #9FBE5A;
@@ -139,10 +140,11 @@ svg {
   50% {
     filter: url(#blur2);
   }
-  75% {
+    75% {
     filter: url(#blur1);
   }
   100% {
     filter: url(#blur0);
   }
 }
+

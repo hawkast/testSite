@@ -12,6 +12,7 @@ header .header-img {
     max-height: 300px;
     object-fit: cover;
 }
+
 .save-the-date{
  text-align: center;
 
@@ -55,6 +56,20 @@ header .header-img {
     margin: 0.5rem 0;
     line-height: 1.5;
 }
+/* Media query per dispositivi fino a 768px di larghezza */
+@media (max-width: 768px) {
+    .location-details2 {
+        padding: 20px;
+    }
+}
+
+/* Media query per dispositivi fino a 480px di larghezza */
+@media (max-width: 480px) {
+    .location-details2 {
+        width: 100%;
+        padding: 10px;
+    }
+}
 
 .save-the-date .date-location {
     font-size: 1.2rem;
@@ -84,7 +99,7 @@ header .header-img {
 }
 
 .photo-gallery img {
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
     border: 3px solid #e5e5e5;
     border-radius: 10px;
@@ -159,6 +174,30 @@ position: relative;
     margin: 0.5rem 0;
     color: #8b0000;
 }
+.contact-info {
+    text-align: center;
+    background-color: #f7f4ef;
+    padding: 2rem 1rem;
+    border-top: 2px solid #e5e5e5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info .contact-icon {
+    width: 40px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8b0000;
+    margin: 0;
+    line-height: 1.5;
+}
+
 	
 .particle {
     position: absolute;

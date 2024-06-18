@@ -1,6 +1,6 @@
         document.addEventListener("DOMContentLoaded", () => {
             let button = new ExplosiveButton("#rsvp-yes");
-    let buttonNo = new ExplosiveButton("#rsvp-no");
+    
         });
 
         class ExplosiveButton {
